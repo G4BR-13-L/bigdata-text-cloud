@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Informações de Dados</title>
+	
+	<script language="javascript" type="text/javascript">
+	
+		function send(){
+			
+			var texto_bd = document.getElementById("texto").value;
+			
+			  alert(texto_bd);
+						
+			}
+	
+	</script>
+	
+</head>
+
+<body>
+	
+	<fieldset>
+		<legend> Digite as tags ou textos: </legend>
+		
+		<form action="result_bigdata.php" method="post" id="dados"> 
+		
+		 <label> Digite ou cole suas informações aqui: </label> <br/> <br/>
+			
+			<textarea cols="60" rows="10" id="texto" name="texto"> </textarea>
+			
+			<br/> <br/>
+			
+			<input type="submit" id="enviar" name="enviar" value="ENVIAR" onClick="send()"/>
+			
+		</form>
+	
+	</fieldset>
+	
+		
+</body>
+</html>
